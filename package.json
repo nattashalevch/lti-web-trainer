@@ -1,0 +1,16 @@
+{
+  "name": "lti-web-trainer",
+  "version": "1.0.0",
+  "description": "LTI 1.3 тренажёр по HTML/CSS: три задания, оценка уходит в журнал Moodle",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ltijs": "^5.9.5"
+  }
+}

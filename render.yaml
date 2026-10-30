@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: lti-web-trainer
+    runtime: docker
+    plan: free
+    healthCheckPath: /healthz
+    envVars:
+      - key: LTI_KEY
+        generateValue: true
+      - key: MONGO_URL
+        sync: false
+      - key: MOODLE_URL
+        sync: false
+      - key: MOODLE_CLIENT_ID
+        sync: false
